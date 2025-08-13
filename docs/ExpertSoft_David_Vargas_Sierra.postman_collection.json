@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "60d2df29-039e-4b48-a0d0-b4e219c7f2f1",
+		"name": "ExpertSoft_David_Vargas_Sierra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45539382"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Collect all clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Collect client by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clients/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/total_amount/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_client\": 8,\n    \"client_name\": \"Jonathan Cook\",\n    \"client_identification\": \"768\",\n    \"address\": \"test123\",\n    \"cellphone\": 51767,\n    \"email\": \"test1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/total_amount/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"total_amount",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/invoices/inv-transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices/inv-transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"inv-transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/platformsbytransactions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_client\": 8,\n    \"client_name\": \"Jonathan Cook\",\n    \"client_identification\": \"768\",\n    \"address\": \"test123\",\n    \"cellphone\": 51767,\n    \"email\": \"test1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/platformsbytransactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"platformsbytransactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_client\": 8,\n    \"client_name\": \"Jonathan Cook\",\n    \"client_identification\": \"768\",\n    \"address\": \"test123\",\n    \"cellphone\": 51767,\n    \"email\": \"test1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clients/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_client\": 108,\n    \"client_name\": \"Jonathan Cook\",\n    \"client_identification\": \"76\",\n    \"address\": \"test123\",\n    \"cellphone\": 51767,\n    \"email\": \"test1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clients/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clients/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clients",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
